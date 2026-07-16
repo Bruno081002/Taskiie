@@ -2,13 +2,18 @@ import { View, Text, StyleSheet } from "react-native";
 import { TouchableOpacity } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { useState } from "react";
+import AddTaskModal from "./addTaskModal";
 
-export default function AddButton() {
-    const [modalVisibel, setModalVisible] = useState(false);
+type AddButtonProps = {
+  isOpen: () => void, 
+}
+
+export default function AddButton({isOpen}:AddButtonProps) {
+    const [modalVisible, setModalVisible] = useState(false);
     return (
       <View style={buttonStyle.container}>
-            <TouchableOpacity onPress={() => setModalVisible(true) }>
-          <Text  style={buttonStyle.plus}>
+        <TouchableOpacity onPress={isOpen}>
+          <Text style={buttonStyle.plus}>
             <FontAwesome6 name="plus" size={50} color="white" />
           </Text>
         </TouchableOpacity>

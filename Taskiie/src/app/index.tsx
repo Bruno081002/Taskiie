@@ -1,14 +1,18 @@
 import { Text, View, StyleSheet } from "react-native";
-import Header from "../../Components/Header";
-import AddButton from "../../Components/AddButton";
+import Header from "../../Components/header";
+import AddButton from "../../Components/addButton";
+import AddTaskModal from "../../Components/addTaskModal";
+import { useState } from "react";
 
 export default function Index() {
+ const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.container}>
       {/* <Text>Edit src/app/index.tsx to edit this screen.</Text> */}
       <Header />
       <View style={styles.container1}></View>
-      <AddButton />
+      <AddButton isOpen={() => setModalVisible}/>
+      <AddTaskModal modalVisible={modalVisible} />
     </View>
   );
 }

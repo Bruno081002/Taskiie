@@ -16,19 +16,21 @@ export default function Header() {
 }
 
 const HeaderStyle = StyleSheet.create({
-    container: {
-        top: 0,
-        boxShadow: "0px 0px 4px 0px black",
-        shadowColor: "black",
-        backgroundColor: "#f8eee9",
-    },
-    container1: {
-
-        margin: 10,
-    },
-    text: {
-        justifyContent: "space-between",
-        marginLeft: 10,
-        fontWeight: "bold",
-    }
-})
+  container: {
+    top: 0,
+    padding: 10,
+    boxShadow: "0px 0px 4px 0px black",
+    shadowColor: "black",
+    backgroundColor: "#f8f3f0",
+    marginBottom: 25
+  },
+  container1: {
+    margin: 10,
+  },
+  text: {
+    justifyContent: "space-between",
+    marginLeft: 0,
+    fontWeight: "bold",
+    fontSize:25
+  },
+});

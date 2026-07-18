@@ -11,8 +11,8 @@ export default function Index() {
       {/* <Text>Edit src/app/index.tsx to edit this screen.</Text> */}
       <Header />
       <View style={styles.container1}></View>
-      <AddButton isOpen={() => setModalVisible}/>
-      <AddTaskModal modalVisible={modalVisible} />
+      <AddButton isOpen={() => setModalVisible(true)}/>
+      <AddTaskModal modalVisible={modalVisible} isClosed={() => setModalVisible(false)} />
     </View>
   );
 }

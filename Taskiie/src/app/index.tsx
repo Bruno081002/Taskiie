@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import AddButton from "../Components/AddButton";
 import AddTaskModal from "../Components/addTaskModal";
 import Signup from "@/Authentication/SignUp";
+import Signin from "@/Authentication/Signin";
 import { useState } from "react";
 
 export default function Index() {
@@ -17,7 +18,8 @@ export default function Index() {
         modalVisible={modalVisible}
         isClosed={() => setModalVisible(false)}
       /> */}
-      <Signup />
+      {/* <Signup /> */}
+      <Signin />
     </View>
   );
 }

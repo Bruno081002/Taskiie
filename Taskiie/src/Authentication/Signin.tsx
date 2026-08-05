@@ -1,8 +1,9 @@
+
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
 import { useState } from "react";
 
-export default function Signup() {
+export default function Signin() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");

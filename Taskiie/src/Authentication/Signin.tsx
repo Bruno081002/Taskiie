@@ -4,23 +4,14 @@ import { StyleSheet } from "react-native";
 import { useState } from "react";
 
 export default function Signin() {
-	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-	const [confirmPassword, setConfirmPassword] = useState("");
 	return (
 		<View style={SignupStyle.container}>
 			<View style={SignupStyle.card}>
 				<Text style={SignupStyle.logo}>Taskiie</Text>
 				<Text style={SignupStyle.title}>Create you account</Text>
 				<View style={SignupStyle.form}>
-					<TextInput
-						style={SignupStyle.input}
-						placeholder="Name"
-						placeholderTextColor="#9ca3af"
-						value={name}
-						onChangeText={setName}
-					></TextInput>
 					<TextInput
 						style={SignupStyle.input}
 						placeholder="email"
@@ -36,21 +27,13 @@ export default function Signin() {
 						value={password}
 						onChangeText={setPassword}
 					></TextInput>
-					<TextInput
-						style={SignupStyle.input}
-						placeholder="confirmPassword"
-						placeholderTextColor="#9ca3af"
-						secureTextEntry={true}
-						value={confirmPassword}
-						onChangeText={setConfirmPassword}
-					></TextInput>
 					<TouchableOpacity style={SignupStyle.signupbutton}>
-						<Text>SignUp</Text>
+						<Text>SignIn</Text>
 					</TouchableOpacity>
 					<View style={SignupStyle.signinstyle}>
 						<Text>Don't You have an account?</Text>
 						<TouchableOpacity>
-							<Text>Signin</Text>
+							<Text>Signup</Text>
 						</TouchableOpacity>
 					</View>
 				</View>

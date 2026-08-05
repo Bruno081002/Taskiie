@@ -47,7 +47,7 @@ export default function Signup() {
 						<Text>SignUp</Text>
 					</TouchableOpacity>
 					<View style={SignupStyle.signinstyle}>
-						<Text>Don't You have an account?</Text>
+						<Text>Do You have an account?</Text>
 						<TouchableOpacity>
 							<Text>Signin</Text>
 						</TouchableOpacity>
